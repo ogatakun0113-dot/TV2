@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import datetime, timedelta, timezone
 
 # ページ設定
-st.set_page_config(page_title="緒方メディアハブ", layout="wide")
+st.set_page_config(page_title="テレビ・ラジオ番組表", layout="wide")
 
 # 日本標準時 (JST) を確実に取得する設定
 JST = timezone(timedelta(hours=+9), 'JST')
@@ -60,7 +60,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="credit">開発/制作：緒方</p>', unsafe_allow_html=True)
-st.title("📺 緒方メディアハブ")
+st.title("📺 テレビ・ラジオ番組表")
 
 # --- 日付選択エリア ---
 st.write(f"🕒 現在の日本時間: **{now_jst.strftime('%Y/%m/%d %H:%M')}**")
